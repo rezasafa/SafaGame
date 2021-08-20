@@ -1,0 +1,36 @@
+﻿@model IEnumerable<SafaGames.Models.Areas>
+
+@{
+    ViewBag.Title = "لیست مناطق";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("جدید", "Create")
+</p>
+<div class="row">
+    @foreach(var item in Model)
+    {
+        <div class="col-md-4">
+            <table>
+                <tr>
+                    <td>
+                        <h1>
+                            @item.citys.Title - 
+                            @item.Title
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("ویرایش", "Edit", new { id = item.AreaID }) |
+                        @Html.ActionLink("نمایش", "Details", new { id = item.AreaID }) |
+                        @Html.ActionLink("حذف", "Delete", new { id = item.AreaID })
+                    </td>
+                </tr>
+            </table>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,66 @@
+﻿@model SafaGames.Models.Contactus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contactus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Names)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Names)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Messages)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Messages)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.users)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.users)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

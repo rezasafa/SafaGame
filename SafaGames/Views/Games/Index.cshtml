@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SafaGames.Models.Games>
+
+@{
+    ViewBag.Title = "لیست بازی ها";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("جدید", "Create")
+</p>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <a href="~/Games/@item.GameID">
+                <table>
+                    <tr>
+                        <td>
+                            <h6>
+                                @item.Title
+                            </h6>
+                            <h6>
+                                @item.areas.Title
+                            </h6>
+                        </td>
+                        <td>
+                            @if (item.imgpic == null)
+                            {
+                                <img src="~/img/no-picture11.png" class="myImgAvd" />
+                            }
+                            else
+                            {
+                                <img src="~/img/@item.imgpic" class="myImgAvd" />
+                            }
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            قیمت :
+                            @String.Format("{0:0,0}", item.Price)
+                        </td>
+                    </tr>
+                </table>
+            </a>
+            @Html.ActionLink("ویرایش", "Edit", new { id = item.GameID }) |
+            @Html.ActionLink("نمایش", "Details", new { id = item.GameID }) |
+            @Html.ActionLink("حذف", "Delete", new { id = item.GameID })
+        </div>
+    }
+</div>

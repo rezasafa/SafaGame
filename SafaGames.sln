@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafaGames", "SafaGames\SafaGames.csproj", "{62360A95-AA68-498D-BF50-86BAAC387B68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62360A95-AA68-498D-BF50-86BAAC387B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62360A95-AA68-498D-BF50-86BAAC387B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62360A95-AA68-498D-BF50-86BAAC387B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62360A95-AA68-498D-BF50-86BAAC387B68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E8C2EF1-9409-4DFE-80C5-ED5BBEF342BE}
+	EndGlobalSection
+EndGlobal

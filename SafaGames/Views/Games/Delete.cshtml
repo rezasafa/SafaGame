@@ -1,0 +1,144 @@
+﻿@model SafaGames.Models.Games
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Games</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.areas.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.areas.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.avdtypes.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.avdtypes.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.categorys.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.categorys.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.devices.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.devices.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.styles.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.styles.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imgpic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imgpic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Body)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tells)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tells)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.users)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.users)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
